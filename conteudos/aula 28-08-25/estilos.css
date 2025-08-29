@@ -1,0 +1,29 @@
+.estrutura{
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+
+}
+
+input {
+    margin: 10px;
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: blue;
+}
