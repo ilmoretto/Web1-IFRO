@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção de eventos do clique -->
+        <section class="secao">
+            <h2>1. Eventos de Clique</h2>
+
+            <button id="botao-simples">Clique aqui</button>
+            <button id="botao-contador">Contador: 0</button>
+
+            <div id="resultado-click">Resultado...</div>
+        </section>
+
+        <!-- eventos do mouse -->
+        <section class="secao">
+            <h2>2. Eventos de Mouse</h2>
+
+            <div id="area-mouse" class="area-interativa">
+                Passe o mouse aqui...
+            </div>
+
+            <div id="resultado-mouse">Status do mouse: aguardando...</div>
+        </section>
+
+        <!-- eventos do teclado -->
+        <section class="secao">
+            <h2>3. Eventos do teclado</h2>
+            <input type="text" id="input-texto" placeholder="Digite aqui.">
+            <div id="resultado-teclado">Você está pressionando: </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

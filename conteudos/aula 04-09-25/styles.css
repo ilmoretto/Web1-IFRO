@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.instrucoes {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    
+}
+
+.secao {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 3px solid #1509c4;
+    border-right: 3px solid #1509c4;
+    border-top: 3px solid #1509c4;
+    border-bottom: 3px solid #1509c4;
+    border-radius: 6px;
+    
+}
+
+.secao h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #ff6a13;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #df4b06;
+    font-weight: bold;
+}
+
+.area-interativa {
+    background: #e9ecef;
+    border: 2px dashed #999;
+    padding: 30px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form button {
+    width: 100px;
+}
+
+div[id*="resultado"] {
+    background: #d4edda;
+    border: 1px solid #69e085;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    min-height: 40px;
+}
+#resultado-teclado {
+    font-weight: bold;
+}
