@@ -1,0 +1,74 @@
+Revisão de Lógica 
+
+- Tabela verdade
+
+Funções assíncronas - operações de longa duração
+
+    Quando  usar:
+        Requisições HTTP/AJAX
+        Leitura de arquivos e dados externos
+        Esperar respostas de banco de dados remoto
+        Operações que dependem do tempo (ex: delays, timers)
+        Qualquer tarefa que não deve bloquear a interface do usuário
+
+    Quando usa uma função assíncrona, ela espera os dados chegarem, quando não se usa a função vai direto
+    O código fica travado na linha aguardando o retorno da validação de dados na API
+
+    Quando não usar
+        Soma ou validações
+        operações extremamente rápidas
+        fluxos síncronos
+        dentro de construtores ou Classes
+        Manipular estados que exijam respostas do usuário
+
+        (manter o código simples)
+    
+    Para implementar usa-se "async" antes de function
+
+    Erros comuns
+        usar o await fora de funções assíncronas
+        não tratar Erros
+        (sempre tratar os errosss try catch)
+
+    Dicas
+        Preferencia por async/await
+        Evitar criar funções async desnecessárias
+        Para múltiplas requisições, usar promise.all()
+        leia sempre a documentação das APIs que você usa!
+
+
+
+HTTP: Visão Geral
+    Protocolo de comunicação base da Web
+    Métodos indicam a intenção de requisição
+    Códigos de estatus retornam o resultado da operação
+
+    VERBOS
+        GET - Recupera dados
+        POST - Cria recurso ou aciona ação
+        PUT - Substitui recurso existente
+        PATCH - Atualiza parcialmente um recurso
+        DELETE - Remove o recurso
+        HEAD - Igual ao GET sem corpo
+        OPTIONS - Informa capacidades do recurso
+
+    Códigos de status mais comuns
+        200 - OK
+        201 - Created
+        402 - Not found
+        500 - Internal server error
+        401 - sem autorização (senha ou token errado)
+        400 - Bad Request
+
+    Classes
+
+    Proxy - terceirizar serviço (comunicação com a API)
+
+    Métodos Essenciais - exemplos
+        GET 
+            GET /api/produtos/42 -> 200 OK
+        POST
+            POST /api/produtos {nome, preco} -> 201 Created
+        PUT
+            PUT /api/produtos/42 {JSON completo} -> 200 OK
+        
