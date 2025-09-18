@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Web1-IFRO | Conteúdos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuToggle" class="menu-toggle" aria-label="Abrir/fechar menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <h1>Web1-IFRO</h1>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Menu lateral">
+      <div class="sidebar-header">
+        <input id="search" type="search" placeholder="Buscar aula..." aria-label="Buscar aula" />
+      </div>
+      <nav id="menu" class="menu" aria-label="Lista de aulas"></nav>
+      <footer class="sidebar-footer">
+        <small>Clique em uma aula para abrir.</small>
+      </footer>
+    </aside>
+
+    <main id="content" class="content" role="main">
+      <iframe id="viewer" title="Conteúdo da aula" src="" loading="lazy"></iframe>
+    </main>
+  </div>
+
+  <!-- Fallback OFFLINE: dados embutidos para quando abrir via file:// -->
+  <!-- Atualize esta lista quando adicionar novas aulas -->
+  <script id="conteudos-data" type="application/json">
+  [
+    { "titulo": "Aula 11-09-25", "arquivo": "conteudos/aula 11-09-25/index.html" },
+    { "titulo": "Aula 04-09-25", "arquivo": "conteudos/aula 04-09-25/index.html" },
+    { "titulo": "Aula 28-08-25", "arquivo": "conteudos/aula 28-08-25/index.html" },
+    { "titulo": "Aula 21-08-25", "arquivo": "conteudos/aula 21-08-25/index.html" }
+  ]
+  </script>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
