@@ -19,11 +19,12 @@ input {
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+    outline: none;
 }
 
 .valido {
     border-color: green;
-    background-color: #fff0f0;
+    background-color: #f0fff0;
 }
 
 .invalido {
