@@ -1,0 +1,49 @@
+body {
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 20px 0 5px 0;
+    font-weight: bold;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.valido {
+    border-color: green;
+    background-color: #fff0f0;
+}
+
+.invalido {
+    border-color: red;
+    background-color: #fff0f0;
+}
+
+div{
+    margin-top: 5px;
+    font-size: 14px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
